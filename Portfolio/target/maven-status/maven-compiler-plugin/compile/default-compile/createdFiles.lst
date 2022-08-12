@@ -1,0 +1,8 @@
+com\conygre\spring\boot\services\CompactDiscServiceImpl.class
+com\conygre\spring\boot\rest\CompactDiscController.class
+com\conygre\spring\boot\services\CompactDiscService.class
+com\conygre\spring\boot\AppConfig.class
+com\conygre\spring\boot\entities\Track.class
+com\conygre\spring\boot\entities\CompactDisc.class
+com\conygre\spring\boot\repos\CompactDiscRepository.class
+com\conygre\spring\boot\SwaggerConfig.class
