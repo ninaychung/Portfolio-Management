@@ -1,9 +1,9 @@
-POST http://localhost:8080/api/compactdiscs
+POST http://localhost:8080/api/stocks
 Content-type: application/json
 
 {
     "ticker" : "ABC",
     "price" : "199",
     "amount" : "5",
-    "transaction_type" : "BUY"
+    "transactionType" : "SELL"
 }

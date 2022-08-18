@@ -1,2 +1,2 @@
-DELETE http://localhost:8080/api/stocks/14
+DELETE http://localhost:8080/api/stocks/5
 Content-type: application/json
