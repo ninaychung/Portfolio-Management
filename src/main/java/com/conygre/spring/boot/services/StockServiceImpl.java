@@ -65,9 +65,15 @@ public class StockServiceImpl implements StockService {
 
     @Override
     public void deleteStock(Integer id) {
-//        Stock toBeDeleted = dao.findByTicker(ticker);
-//        deleteStock(toBeDeleted);
+//        Optional<Stock> toBeDeleted = dao.findById(id);
+//        if (!toBeDeleted.isEmpty()){
+//            deleteStock(tobeDeleted);
+//        }
 
+        Stock tobeDeleted = getStockById(id);
+        if (tobeDeleted != null) {
+            deleteStock(tobeDeleted);
+        }
     }
 
     @Override
