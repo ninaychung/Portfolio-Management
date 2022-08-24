@@ -43,13 +43,13 @@ public class StockServiceImpl implements StockService {
 
     @Override
     public Stock getStockById(Integer id) {
-//        Optional<Stock> stockOptional =  dao.findByTicker(ticker);
-//        if (stockOptional.isPresent()) {
-//            return stockOptional.get();
-//        }
-//        else return null;
+        Optional<Stock> stockOptional =  dao.findById(id);
+        if (stockOptional.isPresent()) {
+            return stockOptional.get();
+        }
+        else return null;
 
-        return null;
+
     }
 
     @Override

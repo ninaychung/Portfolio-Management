@@ -11,7 +11,7 @@
         $(document).ready(function () {
             $.ajax({
                         type: "GET",
-                        url: "/api/compactdiscs",
+                        url: "/api/stocks",
 
                         dataType: "json",
                         error: function (xhr, status, error) {
@@ -43,11 +43,11 @@
     </script>
 
     <meta charset="UTF-8">
-    <title>CompactDisc Page</title>
+    <title>Stocks Page</title>
 </head>
 <body>
 
-<h1>Compact Disc Catalog</h1>
+<h1>Stocks Catalog</h1>
 
 <table id="cdTable">
     <tbody>
