@@ -6,6 +6,8 @@ import java.util.List;
 
 import javax.persistence.*;
 
+import java.util.Date;
+
 
 // add an annotations specifying the table that this will map to
 @Entity
@@ -48,12 +50,13 @@ public class StockHistory implements Serializable {
 
     public StockHistory() {}
 
-    public StockHistory(Integer id, String ticker, Double price, Integer amount, Integer is_sold){
+    public StockHistory(Integer id, String ticker, Double price, Integer amount, Integer is_sold, Date date){
         this.id = id;
         this.ticker = ticker;
         this.price = price;
         this.amount = amount;
         this.is_sold = is_sold;
+        this.date = date;
 
     }
 
