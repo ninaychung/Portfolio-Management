@@ -50,13 +50,13 @@ public class StockHistory implements Serializable {
 
     public StockHistory() {}
 
-    public StockHistory(Integer id, String ticker, Double price, Integer amount, Integer is_sold, Date date){
+    public StockHistory(Integer id, String ticker, Double price, Integer amount, Integer is_sold, Date transaction_date){
         this.id = id;
         this.ticker = ticker;
         this.price = price;
         this.amount = amount;
         this.is_sold = is_sold;
-        this.date = date;
+        this.transaction_date = transaction_date;
 
     }
 
@@ -101,11 +101,11 @@ public class StockHistory implements Serializable {
     }
 
     public Date getDate() {
-        return this.date;
+        return this.transaction_date;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDate(Date transaction_date) {
+        this.transaction_date = transaction_date;
     }
 
 
