@@ -62,4 +62,10 @@ public class StockController {
         service.addNewStock(stock);
     }
 
+    @RequestMapping(method = RequestMethod.PUT)
+    public void updateStock(@RequestBody Stock stock) {
+        logger.info("Updating stock at StockController.java updateStock()");
+        service.updateStock(stock);
+    }
+
 }

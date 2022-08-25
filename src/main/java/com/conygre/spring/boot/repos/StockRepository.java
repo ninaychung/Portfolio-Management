@@ -12,5 +12,5 @@ public interface StockRepository extends JpaRepository<Stock, Integer> {
 
 	public Optional<Stock> findById(Integer id);
 
-	//public void updateStock(Integer newQuantity);
+	//public Stock updateStock(Stock stock);
 }

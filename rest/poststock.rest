@@ -1,7 +1,8 @@
-POST http://localhost:8080/api/stocks
+PUT http://demospringdatabase-demospringdatabase.openshift59.conygre.com/api/stocks
 Content-type: application/json
 
 {
+    "id" : 4,
     "ticker" : "ABC",
     "price" : "199",
     "amount" : "5",
