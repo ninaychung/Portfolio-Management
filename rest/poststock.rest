@@ -1,10 +1,10 @@
-PUT http://demospringdatabase-demospringdatabase.openshift59.conygre.com/api/stocks
+PUT http://localhost:8080/api/stocksHistory
 Content-type: application/json
 
 {
-    "id" : 4,
+    "id" : 2,
     "ticker" : "ABC",
-    "price" : "199",
+    "price" : "10",
     "amount" : "5",
-    "transactionType" : "SELL"
+    "is_sold" : 0
 }

@@ -48,8 +48,12 @@ public class StockHistoryServiceImpl implements StockHistoryService {
 //            return StockHistoryOptional.get();
 //        }
 //        else return null;
+        Optional<StockHistory> stockOptional =  dao.findById(id);
+        if (stockOptional.isPresent()) {
+            return stockOptional.get();
+        }
+        else return null;
 
-        return null;
     }
 
     @Override
@@ -65,8 +69,10 @@ public class StockHistoryServiceImpl implements StockHistoryService {
 
     @Override
     public void deleteStockHistory(Integer id) {
-//        StockHistory toBeDeleted = dao.findByTicker(ticker).get();
-//        deleteStockHistory(toBeDeleted);
+        StockHistory tobeDeleted = getStockHistoryById(id);
+        if (tobeDeleted != null) {
+            deleteStockHistory(tobeDeleted);
+        }
 
     }
 

@@ -14,4 +14,5 @@ public interface StockHistoryService {
     void deleteStockHistory(StockHistory stockHistory);
 
     StockHistory updateStockHistory(StockHistory stockHistory);
+    
 }

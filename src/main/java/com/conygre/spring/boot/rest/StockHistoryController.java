@@ -62,4 +62,10 @@ public class StockHistoryController {
         service.addNewStockHistory(StockHistory);
     }
 
+    @RequestMapping(method = RequestMethod.PUT)
+    public void updateStockHistory(@RequestBody StockHistory StockHistory) {
+        logger.info("Updating stockHistory at StockHistoryController.java updateStockHistory()");
+        service.updateStockHistory(StockHistory);
+    }
+
 }
