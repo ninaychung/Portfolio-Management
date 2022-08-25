@@ -42,6 +42,7 @@ public class StockHistory implements Serializable {
     @Column(name="amount") private Integer amount;
 
     @Column(name="is_sold") private Integer is_sold;
+    @Column(name="transaction_date") private Date transaction_date;
 
 
 
@@ -95,6 +96,16 @@ public class StockHistory implements Serializable {
     public void setIs_sold(Integer is_sold) {
         this.is_sold = is_sold;
     }
+
+    public Date getDate() {
+        return this.date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+
 
     // Adding relationships
 //    @JoinColumn(name="cd_id", referencedColumnName="id")
