@@ -44,7 +44,6 @@ public class StockHistory implements Serializable {
     @Column(name="amount") private Integer amount;
 
     @Column(name="is_sold") private Integer is_sold;
-    @Column(name="transaction_date") private Date transaction_date;
 
 
 
@@ -56,7 +55,6 @@ public class StockHistory implements Serializable {
         this.price = price;
         this.amount = amount;
         this.is_sold = is_sold;
-        this.transaction_date = transaction_date;
 
     }
 
@@ -100,13 +98,13 @@ public class StockHistory implements Serializable {
         this.is_sold = is_sold;
     }
 
-    public Date getDate() {
-        return this.transaction_date;
-    }
-
-    public void setDate(Date transaction_date) {
-        this.transaction_date = transaction_date;
-    }
+//    public Date getDate() {
+//        return this.transaction_date;
+//    }
+//
+//    public void setDate(Date transaction_date) {
+//        this.transaction_date = transaction_date;
+//    }
 
 
 
