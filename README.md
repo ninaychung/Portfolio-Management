@@ -7,4 +7,8 @@ Includes:
 - MySQL Databaases for persistent storage to hold Stock and StockHistory (user's personal portfolio) information
 - A web UI (via Angular) where users can view and buy stock
 
+Uses a webhook to deploy the CI/CD pipeline via Jenkins and OpenShift.
+
+This is the backend code, the front end can be found here: https://github.com/rsabhya/PortfolioManagement-Frontend
+
 (Part of Neueda Training program -- full description of project can be found here: https://github.com/nicktodd/projects/blob/main/nam2022.md)
